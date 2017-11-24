@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>X-Ray Fluorescence - New Project</title>
+		<link rel="stylesheet" href="xray.css" />
+		<link rel="stylesheet" href="jquery-ui-1.10.3.custom.min.css" />
+		
+	</head>
+	
+	<body>
+		<div id="container">
+			<form method="post" action="/register" name="register">
+				<fieldset>
+					<legend>
+						Enter Project Information
+					</legend>
+				
+					<div class="project-number">
+						<label>Project Number:
+							<input class="button" type="number" placeholder="Enter 5-Digit Project #" name="project-number" id="project-number" required title="Please enter project number">
+						</label>
+					</div>
+					
+					<div class="customer-name">
+						<label>Customer Name:
+							<input class="button" type="text" placeholder="Enter Customer Name" name="customer-name" id="customer-name" required title="Please enter customer name">
+						</label>
+					</div>
+					
+					<div class="user-initials">
+						<label>User Initials:
+							<input class="button" type="text" placeholder="Enter Your Initials" name="user-initials" id="user-initials" required title="Please enter your initials">
+						</label>
+					</div>
+					
+					<div class="register"><input type="submit" value="Register"></div>
+				</fieldset>
+			</form>
+		</div>
+		
+		<script src="jquery-1.9.1.js"></script>
+		<script src="jquery-ui-1.10.3.custom.js"></script>
+		<script src="utilities.js"></script>
+		<script src="validation.js"></script>
+	</body>
+</html>
