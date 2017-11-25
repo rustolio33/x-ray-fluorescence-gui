@@ -27,13 +27,32 @@
 						</label>
 					</div>
 					
+					<div class="method-name">
+						<label>Method Name:
+							<select id="methodName" name="methodName">
+								<option value="choose">Please choose a method</option>
+								<option value="chromePhosphate">Chrome Phosphate</option>
+								<option value="chromeOnSteel">Chrome On Steel</option>
+								<option value="chromeFree">Chrome Free(Titanium)</option>
+							</select>
+						</label>
+					</div>
+					
+					<div class="substrate">
+						<label>Substrate:
+							<select id="substrate" name="substrate">
+								<option value="choose">Please choose a substrate</option>
+							</select>
+						</label>
+					</div>
+					
 					<div class="user-initials">
 						<label>User Initials:
 							<input class="button" type="text" placeholder="Enter Your Initials" name="user-initials" id="user-initials" required title="Please enter your initials">
 						</label>
 					</div>
 					
-					<div class="register"><input type="submit" value="Register"></div>
+					<div class="register"><input type="submit" value="Enter New Project"></div>
 				</fieldset>
 			</form>
 		</div>
@@ -42,5 +61,6 @@
 		<script src="jquery-ui-1.10.3.custom.js"></script>
 		<script src="utilities.js"></script>
 		<script src="validation.js"></script>
+		<script src="select.js"></script>
 	</body>
 </html>
