@@ -60,7 +60,7 @@
 	}
 	
 	function isEmpty(el) {
-		return !el.value || el.value === el.placeholder;
+		return !el.value || el.value === el.placeholder || el.selectedIndex === 0;
 	}
 	
 	function validateTypes(el) {
