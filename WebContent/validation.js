@@ -1,8 +1,9 @@
 (function () {
 	document.forms.register.noValidate = true;  //disables HTML5 validation to use Javascript
 	
-	$('form').on('submit', function (e) {
-		var elements = this.elements;
+	$('#next').on('click', function (e) {
+		var form = document.getElementById('start-project');
+		var elements = form.elements;
 		var valid = {};
 		var isValid;
 		var isFormValid;

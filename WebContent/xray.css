@@ -59,7 +59,7 @@ select {
 	
 }
 
-input[type="submit"] {
+input[type="button"] {
 	display: block;
 	clear: right;
 	margin: 5px auto;
@@ -72,4 +72,8 @@ input[type="submit"] {
 	display: block;
 	float: right;
 	font-size: 15px;
+}
+
+fieldset:not(:first-of-type) {
+	display: none;
 }

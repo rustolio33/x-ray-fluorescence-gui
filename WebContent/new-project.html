@@ -9,8 +9,8 @@
 	
 	<body>
 		<div id="container">
-			<form method="post" action="/register" name="register">
-				<fieldset>
+			<form id="form" method="post" action="/register" name="register">
+				<fieldset id="start-project">
 					<legend>
 						Enter Project Information
 					</legend>
@@ -29,7 +29,7 @@
 					
 					<div class="method-name">
 						<label>Method Name:
-							<select id="methodName" name="methodName" required>
+							<select id="method-name" name="method-name" required>
 								<option value="choose">Please choose a method</option>
 								<option value="chromePhosphate">Chrome Phosphate</option>
 								<option value="chromeOnSteel">Chrome On Steel</option>
@@ -52,7 +52,25 @@
 						</label>
 					</div>
 					
-					<div class="register"><input type="submit" value="Enter New Project"></div>
+					<div class="register"><input id="next" type="button" value="Enter New Project"></div>
+				</fieldset>
+				
+				</fieldset>
+				
+				<fieldset id="measure">
+					<legend>
+						Enter Sample Name
+					</legend>
+					
+					<div class="sample-name">
+						<label>Sample Name:
+							<input class="button" type="text" placeholder="Enter Sample Name" name="sample-name" id="sample-name" required title="Please enter sample name">
+						</label>
+					</div>
+					
+					<div class="register"><input id="measure-sample" type="button" value="Measure Sample"></div>
+					<div class="register"><input id="complete-project" type="button" value="Complete Project"></div>
+				
 				</fieldset>
 			</form>
 		</div>
@@ -60,7 +78,8 @@
 		<script src="jquery-1.9.1.js"></script>
 		<script src="jquery-ui-1.10.3.custom.js"></script>
 		<script src="utilities.js"></script>
-		<script src="validation.js"></script>
+		<script src="validate.js"></script>
 		<script src="select.js"></script>
+		<script src="multistepform.js"></script>
 	</body>
 </html>

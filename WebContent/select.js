@@ -1,5 +1,5 @@
 (function() {
-	var method = document.getElementById('methodName');
+	var method = document.getElementById('method-name');
 	var substrate = document.getElementById('substrate');
 	var chromePhosphate = {
 			alcl: 'Aluminum Coil Stock',
