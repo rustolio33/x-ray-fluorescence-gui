@@ -77,3 +77,7 @@ input[type="button"] {
 fieldset:not(:first-of-type) {
 	display: none;
 }
+
+#results-table {
+	display: none;
+}
