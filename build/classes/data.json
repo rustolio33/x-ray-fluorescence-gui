@@ -1,0 +1,312 @@
+[{
+    "projectNumber" : "25678",
+    "customerName": "Metal Coaters",
+    "methodName": "chromeOnSteel",
+    "substrate": "galv",
+    "userInitials": "RP",
+    "measurements": [
+        {
+            "sampleName": "1 East",
+            "date": "12/10/2017, 8:13:16 PM",
+            "measurementArray": [
+                540,
+                442,
+                572
+            ],
+            "mean": 519,
+            "stdDev": 55,
+            "coatingWeight": 1
+        },
+        {
+            "sampleName": "1 West",
+            "date": "12/10/2017, 8:13:31 PM",
+            "measurementArray": [
+                4817,
+                4882,
+                4947
+            ],
+            "mean": 4883,
+            "stdDev": 53,
+            "coatingWeight": 10
+        },
+        {
+            "sampleName": "2 East",
+            "date": "12/10/2017, 8:13:37 PM",
+            "measurementArray": [
+                4116,
+                4210,
+                4041
+            ],
+            "mean": 4123,
+            "stdDev": 69,
+            "coatingWeight": 8
+        },
+        {
+            "sampleName": "2 West",
+            "date": "12/10/2017, 8:13:43 PM",
+            "measurementArray": [
+                4208,
+                4138,
+                4129
+            ],
+            "mean": 4159,
+            "stdDev": 35,
+            "coatingWeight": 8
+        },
+        {
+            "sampleName": "3 East",
+            "date": "12/10/2017, 8:13:51 PM",
+            "measurementArray": [
+                2977,
+                2916,
+                2894
+            ],
+            "mean": 2930,
+            "stdDev": 35,
+            "coatingWeight": 6
+        },
+        {
+            "sampleName": "3 West",
+            "date": "12/10/2017, 8:13:56 PM",
+            "measurementArray": [
+                4304,
+                4322,
+                4334
+            ],
+            "mean": 4321,
+            "stdDev": 12,
+            "coatingWeight": 9
+        }
+    ]
+},
+{
+    "projectNumber": "25784",
+    "customerName": "Precoat",
+    "methodName": "chromeFree",
+    "substrate": "glum",
+    "userInitials": "RP",
+    "measurements": [
+        {
+            "sampleName": "Coil 2587 6am",
+            "date": "12/10/2017, 8:22:10 PM",
+            "measurementArray": [
+                1108,
+                1018,
+                969
+            ],
+            "mean": 1033,
+            "stdDev": 58,
+            "coatingWeight": 17.1
+        },
+        {
+            "sampleName": "Coil 3942 8am",
+            "date": "12/10/2017, 8:22:33 PM",
+            "measurementArray": [
+                299,
+                357,
+                437
+            ],
+            "mean": 365,
+            "stdDev": 57,
+            "coatingWeight": 6.1
+        },
+        {
+            "sampleName": "Coil 0293 10am",
+            "date": "12/10/2017, 8:22:47 PM",
+            "measurementArray": [
+                440,
+                526,
+                391
+            ],
+            "mean": 453,
+            "stdDev": 56,
+            "coatingWeight": 7.5
+        },
+        {
+            "sampleName": "Coil 4849 12pm",
+            "date": "12/10/2017, 8:22:59 PM",
+            "measurementArray": [
+                650,
+                659,
+                574
+            ],
+            "mean": 629,
+            "stdDev": 38,
+            "coatingWeight": 10.4
+        },
+        {
+            "sampleName": "Coil 9848 2pm",
+            "date": "12/10/2017, 8:24:39 PM",
+            "measurementArray": [
+                435,
+                290,
+                379
+            ],
+            "mean": 369,
+            "stdDev": 60,
+            "coatingWeight": 6.1
+        },
+        {
+            "sampleName": "Coil 2910 4pm",
+            "date": "12/10/2017, 8:24:51 PM",
+            "measurementArray": [
+                800,
+                714,
+                722
+            ],
+            "mean": 746,
+            "stdDev": 39,
+            "coatingWeight": 12.4
+        },
+        {
+            "sampleName": "Coil 4920 6pm",
+            "date": "12/10/2017, 8:25:06 PM",
+            "measurementArray": [
+                991,
+                855,
+                923
+            ],
+            "mean": 924,
+            "stdDev": 56,
+            "coatingWeight": 15.3
+        }
+    ]
+},
+{
+    "projectNumber": "25859",
+    "customerName": "Pella Windows",
+    "methodName": "chromeFree",
+    "substrate": "alex",
+    "userInitials": "DM",
+    "measurements": [
+        {
+            "sampleName": "Top 1",
+            "date": "12/10/2017, 8:29:21 PM",
+            "measurementArray": [
+                1579,
+                1432,
+                1443
+            ],
+            "mean": 1486,
+            "stdDev": 67,
+            "coatingWeight": 24.7
+        },
+        {
+            "sampleName": "Middle 1",
+            "date": "12/10/2017, 8:29:28 PM",
+            "measurementArray": [
+                1374,
+                1224,
+                1243
+            ],
+            "mean": 1281,
+            "stdDev": 67,
+            "coatingWeight": 21.3
+        },
+        {
+            "sampleName": "Bottom 1",
+            "date": "12/10/2017, 8:29:36 PM",
+            "measurementArray": [
+                1043,
+                1045,
+                1169
+            ],
+            "mean": 1087,
+            "stdDev": 59,
+            "coatingWeight": 18
+        },
+        {
+            "sampleName": "Top 2",
+            "date": "12/10/2017, 8:29:43 PM",
+            "measurementArray": [
+                834,
+                962,
+                828
+            ],
+            "mean": 876,
+            "stdDev": 62,
+            "coatingWeight": 14.5
+        },
+        {
+            "sampleName": "Middle 2",
+            "date": "12/10/2017, 8:29:49 PM",
+            "measurementArray": [
+                808,
+                854,
+                754
+            ],
+            "mean": 806,
+            "stdDev": 41,
+            "coatingWeight": 13.4
+        },
+        {
+            "sampleName": "Bottom 2",
+            "date": "12/10/2017, 8:29:54 PM",
+            "measurementArray": [
+                809,
+                838,
+                821
+            ],
+            "mean": 824,
+            "stdDev": 12,
+            "coatingWeight": 13.7
+        }
+    ]
+},
+{
+    "projectNumber": "25984",
+    "customerName": "Solar Innovations",
+    "methodName": "chromeOnSteel",
+    "substrate": "crs",
+    "userInitials": "CH",
+    "measurements": [
+        {
+            "sampleName": "11/23 6am",
+            "date": "12/10/2017, 8:33:16 PM",
+            "measurementArray": [
+                3315,
+                3292,
+                3355
+            ],
+            "mean": 3322,
+            "stdDev": 26,
+            "coatingWeight": 6.6
+        },
+        {
+            "sampleName": "11/23 12pm",
+            "date": "12/10/2017, 8:33:31 PM",
+            "measurementArray": [
+                922,
+                1006,
+                964
+            ],
+            "mean": 965,
+            "stdDev": 34,
+            "coatingWeight": 1.9
+        },
+        {
+            "sampleName": "11/23 6pm",
+            "date": "12/10/2017, 8:33:39 PM",
+            "measurementArray": [
+                4823,
+                4776,
+                4741
+            ],
+            "mean": 4781,
+            "stdDev": 34,
+            "coatingWeight": 9.6
+        },
+        {
+            "sampleName": "11/24 12am",
+            "date": "12/10/2017, 8:33:50 PM",
+            "measurementArray": [
+                1011,
+                965,
+                1128
+            ],
+            "mean": 1036,
+            "stdDev": 69,
+            "coatingWeight": 2.1
+        }
+    ]
+}]
