@@ -8,8 +8,8 @@ $("#next").on('click', function(e) {
 
 		newProject.projectNumber = $('#project-number').val();
 		newProject.customerName = $('#customer-name').val();
-		newProject.methodName = $('#method-name').val();
-		newProject.substrate = $('#substrate').val();
+		newProject.methodName = $('#method-name option:selected').text();
+		newProject.substrate = $('#substrate option:selected').text();
 		newProject.userInitials = $('#user-initials').val();
 		newProject.measurements = [];
 				
@@ -24,13 +24,14 @@ $("#measure-sample").on('click', function(e) {
 	
 	if(validateForm('measure')) {
 		var measurementObj = {};
+		var methodRef = $('#method-name').val();
 		
 		measurementObj.sampleName = $('#sample-name').val();
 		measurementObj.date = (new Date()).toLocaleString('en-US');
-		measurementObj.measurementArray = createDummyData(newProject.methodName);
+		measurementObj.measurementArray = createDummyData(methodRef);
 		measurementObj.mean = calculateMean(measurementObj.measurementArray);
 		measurementObj.stdDev = calculateStdDev(measurementObj.measurementArray);
-		measurementObj.coatingWeight = calculateCoatingWeight(newProject.methodName, measurementObj.mean);
+		measurementObj.coatingWeight = calculateCoatingWeight(methodRef, measurementObj.mean);
 		
 		newProject.measurements.push(measurementObj);
 		pushResultsToTable(measurementObj);

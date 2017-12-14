@@ -11,6 +11,12 @@ div#container {
 	max-width: 400px;
 }
 
+div#table {
+	background-color: white;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
 a.btn {
 	-webkit-appearance: button;
 	-moz-appearance: button;
@@ -80,4 +86,84 @@ fieldset:not(:first-of-type) {
 
 #results-table {
 	display: none;
+}
+
+td.measurements, td.measurementArray {
+	display: none;
+}
+
+.results {
+	display:none;
+}
+
+.project-line {
+	//display: block;
+	margin: 0px;
+	padding: 0.5em 0.5em 0.5em 0.7em;
+	width: 100%;
+}
+
+table {
+	border: 1px solid;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%
+}
+
+thead#project-table-head th:nth-child(1) {
+	width: 10%;
+}
+
+thead#project-table-head th:nth-child(2) {
+	width: 30%;
+}
+
+thead#project-table-head th:nth-child(3) {
+	width: 20%;
+}
+
+thead#project-table-head th:nth-child(4) {
+	width: 20%;
+}
+
+thead#project-table-head th:nth-child(5) {
+	width: 5%;
+}
+
+thead#results-table-head th:nth-child(1) {
+	width: 35%;
+}
+
+thead#results-table-head th:nth-child(2) {
+	width: 25%;
+}
+
+thead#results-table-head th:nth-child(3) {
+	width: 10%;
+}
+
+thead#results-table-head th:nth-child(4) {
+	width: 10%;
+}
+
+thead#results-table-head th:nth-child(5) {
+	width: 10%;
+}
+
+th, td {
+	padding: 5px;
+}
+
+td.results-cell {
+	border: none;
+	padding: 0px;
+}
+
+tr.project-line {
+	background-color: gray;
+	cursor: pointer;
+}
+
+tr.project-line:hover {
+	background-color: blue;
 }

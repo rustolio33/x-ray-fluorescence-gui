@@ -1,8 +1,8 @@
 [{
     "projectNumber" : "25678",
     "customerName": "Metal Coaters",
-    "methodName": "chromeOnSteel",
-    "substrate": "galv",
+    "methodName": "Chrome On Steel",
+    "substrate": "Galvanized Steel",
     "userInitials": "RP",
     "measurements": [
         {
@@ -82,8 +82,8 @@
 {
     "projectNumber": "25784",
     "customerName": "Precoat",
-    "methodName": "chromeFree",
-    "substrate": "glum",
+    "methodName": "Chrome Free",
+    "substrate": "Galvalume",
     "userInitials": "RP",
     "measurements": [
         {
@@ -175,8 +175,8 @@
 {
     "projectNumber": "25859",
     "customerName": "Pella Windows",
-    "methodName": "chromeFree",
-    "substrate": "alex",
+    "methodName": "Chrome Free",
+    "substrate": "Aluminum Extrusion",
     "userInitials": "DM",
     "measurements": [
         {
@@ -256,8 +256,8 @@
 {
     "projectNumber": "25984",
     "customerName": "Solar Innovations",
-    "methodName": "chromeOnSteel",
-    "substrate": "crs",
+    "methodName": "Chrome On Steel",
+    "substrate": "CRS",
     "userInitials": "CH",
     "measurements": [
         {
