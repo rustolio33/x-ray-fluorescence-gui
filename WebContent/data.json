@@ -15,7 +15,7 @@
             ],
             "mean": 519,
             "stdDev": 55,
-            "coatingWeight": 1
+            "coatingWeight": 1.0
         },
         {
             "sampleName": "1 West",
@@ -27,7 +27,7 @@
             ],
             "mean": 4883,
             "stdDev": 53,
-            "coatingWeight": 10
+            "coatingWeight": 10.0
         },
         {
             "sampleName": "2 East",
@@ -39,7 +39,7 @@
             ],
             "mean": 4123,
             "stdDev": 69,
-            "coatingWeight": 8
+            "coatingWeight": 8.0
         },
         {
             "sampleName": "2 West",
@@ -51,7 +51,7 @@
             ],
             "mean": 4159,
             "stdDev": 35,
-            "coatingWeight": 8
+            "coatingWeight": 8.0
         },
         {
             "sampleName": "3 East",
@@ -63,7 +63,7 @@
             ],
             "mean": 2930,
             "stdDev": 35,
-            "coatingWeight": 6
+            "coatingWeight": 6.0
         },
         {
             "sampleName": "3 West",
@@ -75,7 +75,7 @@
             ],
             "mean": 4321,
             "stdDev": 12,
-            "coatingWeight": 9
+            "coatingWeight": 9.0
         }
     ]
 },
@@ -213,7 +213,7 @@
             ],
             "mean": 1087,
             "stdDev": 59,
-            "coatingWeight": 18
+            "coatingWeight": 18.0
         },
         {
             "sampleName": "Top 2",

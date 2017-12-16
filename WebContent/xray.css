@@ -5,13 +5,40 @@ body {
 	padding: 0px;
 }
 
+header {
+	height: 200px;
+	margin: 0px auto;
+	width: 1200px;
+}
+
+header#index {
+	background: url("images/us-steel-locations.jpg") no-repeat center;
+}
+
+header#new-project {
+	background: url("images/extrusion-line-2.jpg") no-repeat center;
+}
+
+header#existing-project {
+	background: url("images/horizontal-extrusion-line.jpg") no-repeat center;
+}
+
+h1 {
+	color: white;
+	height: 250px;
+    line-height: 350px;
+    vertical-align: bottom;
+	margin: 0px;
+	padding: 0px 5px;
+}
+
 div#container {
 	background-color: white;
 	margin: 0 auto;
 	max-width: 400px;
 }
 
-div#table {
+div.table {
 	background-color: white;
 	margin: 0 auto;
 	max-width: 800px;
@@ -32,10 +59,10 @@ a.btn {
 	width: 60%;
 }
 
-fieldset, article {
+fieldset, article, div.table {
 	border: 1px solid #b9b6b6;
 	border-radius: 10px;
-	margin: 1em 1em;
+	margin: 1em auto;
 }
 
 legend {
@@ -104,7 +131,6 @@ td.measurements, td.measurementArray {
 }
 
 table {
-	border: 1px solid;
 	border-collapse: collapse;
 	table-layout: fixed;
 	width: 100%
@@ -130,8 +156,28 @@ thead#project-table-head th:nth-child(5) {
 	width: 5%;
 }
 
-thead#results-table-head th:nth-child(1) {
+thead#measurements-table-head th:nth-child(1) {
 	width: 35%;
+}
+
+thead#measurements-table-head th:nth-child(2) {
+	width: 25%;
+}
+
+thead#measurements-table-head th:nth-child(3) {
+	width: 10%;
+}
+
+thead#measurements-table-head th:nth-child(4) {
+	width: 10%;
+}
+
+thead#measurements-table-head th:nth-child(5) {
+	width: 10%;
+}
+
+thead#results-table-head th:nth-child(1) {
+	width: 20%;
 }
 
 thead#results-table-head th:nth-child(2) {
@@ -139,19 +185,34 @@ thead#results-table-head th:nth-child(2) {
 }
 
 thead#results-table-head th:nth-child(3) {
-	width: 10%;
+	width: 9%;
 }
 
 thead#results-table-head th:nth-child(4) {
-	width: 10%;
+	width: 9%;
 }
 
 thead#results-table-head th:nth-child(5) {
-	width: 10%;
+	width: 9%;
 }
 
+thead#results-table-head th:nth-child(6) {
+	width: 9%;
+}
+
+thead#results-table-head th:nth-child(7) {
+	width: 9%;
+}
+
+thead#results-table-head th:nth-child(8) {
+	width: 10%;
+}
 th, td {
 	padding: 5px;
+}
+
+th {
+	font-size: 0.8em;
 }
 
 td.results-cell {
@@ -159,11 +220,15 @@ td.results-cell {
 	padding: 0px;
 }
 
+td.ct1, td.ct2, td.ct3, td.mean, td.stdDev, td.coatingWeight {
+	text-align: center;
+}
+
 tr.project-line {
-	background-color: gray;
+	background-color: #d1d1d1;
 	cursor: pointer;
 }
 
 tr.project-line:hover {
-	background-color: blue;
+	background-color: #afc6ea;
 }

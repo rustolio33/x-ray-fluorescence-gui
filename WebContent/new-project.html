@@ -8,6 +8,9 @@
 	</head>
 	
 	<body>
+		<header id="new-project">
+			<h1>X-Ray Fluoresence - Start New Project</h1>
+		</header>
 		<div id="container">
 			<form id="form" method="post" action="/register" name="register">
 				<fieldset id="start-project">
@@ -75,9 +78,9 @@
 			</form>
 		</div>
 		
-		<div>
-			<table id="results-table">
-				<thead>
+		<div class="table" id="results-table">
+			<table>
+				<thead id="results-table-head">
 					<tr>
 						<th>Sample Name</th>
 						<th>Date/Time</th>
@@ -86,7 +89,7 @@
 						<th>Count 3</th>
 						<th>Average Count</th>
 						<th>Standard Deviation</th>
-						<th>Coating Weight</th>
+						<th>Coating Weight (mg/ft<sup>2</sup>)</th>
 					</tr>
 				</thead>
 				<tbody>

@@ -85,20 +85,20 @@ $("#measure-sample").on('click', function(e) {
 
 	function calculateCoatingWeight(method, mean) {
 		var factor = this[method].factor;
-		return Math.round(factor * mean * 10) / 10;	
+		return (Math.round(factor * mean * 10) / 10).toFixed(1);	
 	}
 
 	function pushResultsToTable(measurementObj) {
 		var $row = $('<tr></tr>');
 		
-		$row.append($('<td></td>').text(measurementObj.sampleName));
-		$row.append($('<td></td>').text(measurementObj.date));
-		$row.append($('<td></td>').text(measurementObj.measurementArray[0]));
-		$row.append($('<td></td>').text(measurementObj.measurementArray[1]));
-		$row.append($('<td></td>').text(measurementObj.measurementArray[2]));
-		$row.append($('<td></td>').text(measurementObj.mean));
-		$row.append($('<td></td>').text(measurementObj.stdDev));
-		$row.append($('<td></td>').text(measurementObj.coatingWeight));
+		$row.append($('<td class="sample-name"></td>').text(measurementObj.sampleName));
+		$row.append($('<td class="data"></td>').text(measurementObj.date));
+		$row.append($('<td class="ct1"></td>').text(measurementObj.measurementArray[0]));
+		$row.append($('<td class="ct2"></td>').text(measurementObj.measurementArray[1]));
+		$row.append($('<td class="ct3"></td>').text(measurementObj.measurementArray[2]));
+		$row.append($('<td class="mean"></td>').text(measurementObj.mean));
+		$row.append($('<td class="stdDev"></td>').text(measurementObj.stdDev));
+		$row.append($('<td class="coatingWeight"></td>').text(measurementObj.coatingWeight));
 		
 		$('tbody').append($row);	
 	}

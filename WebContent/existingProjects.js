@@ -1,4 +1,5 @@
-var url = 'http://localhost:8080/X-Ray_Fluorescence/data.json';
+//var url = 'http://localhost:8080/X-Ray_Fluorescence/data.json';
+var url = 'https://raw.githubusercontent.com/rustolio33/x-ray-fluorescence-gui/master/WebContent/data.json'
 var j = [];
 
 $.ajax({
@@ -30,10 +31,10 @@ $.each(j, function (i, element) {
 				"<th>Date/Time</th>" +
 				"<th>Average Count</th>" +
 				"<th>Standard Deviation</th>" +
-				"<th>Coating Weight</th>" +
+				"<th>Coating Weight (mg/ft<sup>2</sup>)</th>" +
 			"</tr>" +
 			"</thead>");
-	$(resultsTableHead).attr('id','results-table-head');
+	$(resultsTableHead).attr('id','measurements-table-head');
 	
 	var resultsTableBody = $("<tbody></tbody>").addClass("measurementTableBody");
 	
@@ -43,6 +44,11 @@ $.each(j, function (i, element) {
 		var measurementItems = [];
 		
 		$.each(measurementElement, function(key, val) {
+			
+			// need to remove this if statement once database is set up
+			if(key === "coatingWeight") {
+				val = val.toFixed(1);
+			}
 			measurementItems.push("<td class='" + key + "'>" + val + "</td>)");
 		});
 		
