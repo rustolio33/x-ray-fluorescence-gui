@@ -2,6 +2,8 @@
 var url = 'https://raw.githubusercontent.com/rustolio33/x-ray-fluorescence-gui/master/WebContent/data.json'
 var j = [];
 
+
+// gets JSON data from url
 $.ajax({
   type: 'GET',
   url: url,
@@ -10,6 +12,13 @@ $.ajax({
   async: false
 });
 
+
+/*
+ * This function loops through each element in the JSON data file, and creates a row to 
+ * add to the project table.  It then contains a function that adds a table for each
+ * project to display the measurement data. This block of code is messy and should probably
+ * be redone at some point
+ */
 $.each(j, function (i, element) {
 	var items = [];
 	
@@ -36,7 +45,7 @@ $.each(j, function (i, element) {
 			"</thead>");
 	$(resultsTableHead).attr('id','measurements-table-head');
 	
-	var resultsTableBody = $("<tbody></tbody>").addClass("measurementTableBody");
+	var resultsTableBody = $("<tbody></tbody>").addClass("measurement-table-body");
 	
 	resultsTableHead.appendTo(resultsTable);
 	
@@ -69,6 +78,8 @@ $.each(j, function (i, element) {
 	rowForResultsTable.appendTo("tbody#project-table-body");
 });
 
+
+// This shows the measurement data for an individual project using an accordion style dropdown.
 $('.project-table').on('click', '.project-line', function(e) {
 	e.preventDefault();
 	$(this)

@@ -1,7 +1,19 @@
+/*
+ * This function disables html5 validation, so custom validation can be used.
+ */
 (function () {
 	document.forms.register.noValidate = true;  //disables HTML5 validation to use Javascript
 }());
 	
+
+/*
+ * This function is adapted from the validation file provided by the book on page 605.
+ * Some things were eliminated, added, or changed to work for this application.
+ * 
+ * The function provides validation of the required form elements of the fieldset that is passed
+ * into the function.  If the validation passes, the function returns true.  If not,
+ * error messages are generated and the function returns false.
+ */
 function validateForm(fieldset) {
 	var form = document.getElementById(fieldset);
 	var elements = form.elements;
@@ -44,6 +56,9 @@ function validateForm(fieldset) {
 	
 }
 
+/*
+ * helper function for validate() to set error message for required fields
+ */
 function validateRequired(el) {
 	if(isRequired(el)) {
 		var valid = !isEmpty(el);
@@ -55,14 +70,23 @@ function validateRequired(el) {
 	return true;
 }
 
+/*
+ * helper function to check if field is required for form
+ */
 function isRequired(el) {
 	return ((typeof el.required === 'boolean') && el.required) || (typeof el.required === 'string');
 }
 
+/*
+ * helper function to check if field is empty
+ */
 function isEmpty(el) {
 	return !el.value || el.value === el.placeholder || el.selectedIndex === 0;
 }
 
+/*
+ * helper function to validate data types for fields
+ */
 function validateTypes(el) {
 	if(!el.value) return true;
 	
@@ -75,6 +99,9 @@ function validateTypes(el) {
 	}
 }
 
+/*
+ * validates user initals
+ */
 function validateUserInitials() {
 	var userInitials = document.getElementById('user-initials');
 	var length = userInitials.value.length;
@@ -86,7 +113,6 @@ function validateUserInitials() {
 }
 
 // functions to set, get, show, and remove error messages
-
 function setErrorMessage(el, message) {
 	$(el).data('errorMessage', message);
 }
@@ -112,8 +138,7 @@ function removeErrorMessage(el) {
 
 
 
-// object for checking types
-
+// object for checking data types
 var validateType = {
 	number: function (el) {
 		var valid = /\b\d{5}\b/g.test(el.value);

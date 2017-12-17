@@ -1,3 +1,10 @@
+/*
+ * The next three objects are the method objects.  They contain the substrate list
+ * as well as the min, max, and factor for calculating the coating weight.  In a real-world
+ * application, these objects would have to be more complicated because the selection
+ * would have to pass off some parameters to the instrument.
+ */
+
 var chromePhosphate = {
 		min : 1500,
 		max : 3000,
@@ -32,10 +39,16 @@ var chromeFree = {
 		}
 };
 
+/*
+ * This function creates the drop down selections for the substrate based on the method
+ * selection made by the user.  I got the gist of this function either from the book, or
+ * Stack Overfow.
+ */
 (function() {
 	var method = document.getElementById('method-name');
 	var substrate = document.getElementById('substrate');
 	
+	// changes substrate dropdown based on method selection
 	addEvent(method, 'change', function() {
 		if(this.value === 'choose') {
 			substrate.innerHTML = '<option>Please choose a method first</option>';
@@ -50,6 +63,7 @@ var chromeFree = {
 		substrate.innerHTML = options;
 	});
 	
+	// returns list of substrates to put into substrate selection
 	function getSubstrate(methodName) {
 		if(methodName === 'chromePhosphate') {
 			return chromePhosphate.substrateList;

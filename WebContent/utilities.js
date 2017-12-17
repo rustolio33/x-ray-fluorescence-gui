@@ -1,4 +1,7 @@
-// Helper function to add an event listener
+/*
+ *  Helper function to add an event listener.  This is copied directly from the files 
+ *  in the book (page 571)
+ */
 
 function addEvent(ev, event, callback) {
 	if('addEventListener' in ev) {

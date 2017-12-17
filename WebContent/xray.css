@@ -23,9 +23,14 @@ header#existing-project {
 	background: url("images/horizontal-extrusion-line.jpg") no-repeat center;
 }
 
+a {
+	text-decoration: none;
+}
+
 h1 {
 	color: white;
-	height: 250px;
+	display: block;
+	height: 200px;
     line-height: 350px;
     vertical-align: bottom;
 	margin: 0px;
@@ -42,6 +47,7 @@ div.table {
 	background-color: white;
 	margin: 0 auto;
 	max-width: 800px;
+	overflow: hidden;
 }
 
 a.btn {
@@ -124,7 +130,6 @@ td.measurements, td.measurementArray {
 }
 
 .project-line {
-	//display: block;
 	margin: 0px;
 	padding: 0.5em 0.5em 0.5em 0.7em;
 	width: 100%;
@@ -134,6 +139,31 @@ table {
 	border-collapse: collapse;
 	table-layout: fixed;
 	width: 100%
+}
+
+#project-table-head, #results-table-head {
+	background-color: #8e8ef2;
+}
+
+#measurements-table-head tr {
+	background-color: #efc394;
+}
+
+.measurement-table-body {
+	background-color: #f4d9bb;
+}
+
+#results-table-body {
+	background-color: #d1d1d1;
+}
+
+tr.project-line {
+	background-color: #d1d1d1;
+	cursor: pointer;
+}
+
+tr.project-line:hover {
+	background-color: #afc6ea;
 }
 
 thead#project-table-head th:nth-child(1) {
@@ -222,13 +252,4 @@ td.results-cell {
 
 td.ct1, td.ct2, td.ct3, td.mean, td.stdDev, td.coatingWeight {
 	text-align: center;
-}
-
-tr.project-line {
-	background-color: #d1d1d1;
-	cursor: pointer;
-}
-
-tr.project-line:hover {
-	background-color: #afc6ea;
 }
